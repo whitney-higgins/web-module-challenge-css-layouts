@@ -50,7 +50,6 @@ table {
 }
 
 header {
-	height: 9rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -165,4 +164,61 @@ footer {
 	background-color: #6B4D57;
 	border: .15rem solid #DDC8C4;
 	color: #DDC8C4;
+}
+
+@media(max-width: 500px) {
+	header {
+		text-align: center;
+		align-items: center;
+		height: 50vh;
+	}
+	.name {
+		font-size: larger;
+		margin-top: 5%;
+	}
+	nav {
+		flex-direction: column;
+		margin: 5%;
+	}
+	nav .nav-btn {
+		width: 100%;
+		height: 4rem;
+		padding: 10px;
+		font-size: 25px;
+	}
+	.about-body {
+		flex-direction: column;
+		align-items: center;
+	}
+	.about-body img {
+		width: 80%;
+		margin-top: 3rem;
+	}
+	.about-info {
+		width: 100%;
+		text-align: center;
+		align-items: center;
+	}
+	.about-info h2 {
+		font-size: 2rem;
+	}
+	.project-btn {
+		margin: 1% 0 5% 0;
+		padding: 2%;
+	}
+	.about-txt {
+		width: 80%;
+		text-align: justify;
+	}
+	.projects {
+		margin-top: 9em;
+	}
+	.project-box {
+		width: 40%;
+		margin-bottom: 4em;
+	}
+
+	.contact-btn {
+		padding: 3%;
+	}
 }
